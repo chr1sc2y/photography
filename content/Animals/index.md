@@ -17,6 +17,6 @@ resources:
   - src: DSC02760.jpeg
   - src: DSC02515.jpeg
   - src: DSC00014.jpeg
-  - src: _DSF4613.jpeg
+  - src: DSF4613.jpeg
 ---
 
