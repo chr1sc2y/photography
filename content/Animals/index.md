@@ -11,7 +11,6 @@ params:
   sort_order: desc
   sort_by: Date # Name 
 resources:
-  - src: DSC02770.jpeg
     # params:
     #   cover: true
   - src: DSC02760.jpeg

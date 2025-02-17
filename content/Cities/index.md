@@ -11,7 +11,6 @@ params:
   sort_order: desc
   sort_by: Date # Name 
 resources:
-  - src: DSC01857.jpeg
   - src: DSC01862.jpeg
   - src: DSC06485.jpeg
   - src: DSC07595.jpeg
