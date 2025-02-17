@@ -1,0 +1,59 @@
+copyright = "©Prov1dence"
+defaultContentLanguage = "en"
+disableKinds = ["taxonomy"]
+enableRobotsTXT = true
+languageCode = "en"
+timeZone = "Australia/Melbourne"
+timeout = "120s"
+title = "©Prov1dence"
+
+[params]
+  defaultTheme = "dark"
+  description = "Photo Gallery ©Prov1dence"
+  title = "Photo Gallery ©Prov1dence"
+  [params.author]
+    email = "zintrulcre@gmail.com"
+    name = "Prov1dence"
+  [params.socialIcons]
+    #facebook = "https://www.facebook.com/"
+    #instagram = "https://www.instagram.com/"
+    #github = "https://github.com/nicokaiser/hugo-theme-gallery/"
+    #youtube = "https://www.youtube.com/"
+    #email = "mailto:zintrulcre@gmail.com"
+    website = "https://prov1dence.top/"
+    #mastodon = "https://example.com"
+    #pixelfed = "https://example.com"
+    #mixcloud = "https://mixcloud.com"
+  [params.gallery]
+    #boxSpacing = 10
+    #targetRowHeight = 288
+    #targetRowHeightTolerance = 0.25
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML"]
+
+[imaging]
+  quality = 75
+  resampleFilter = "CatmullRom"
+  [imaging.exif]
+    disableDate = false
+    disableLatLong = true
+    includeFields = "ImageDescription|Orientation"
+
+[module]
+  [module.hugoVersion]
+    min = "0.121.2"
+  [[module.imports]]
+    path = "github.com/nicokaiser/hugo-theme-gallery/v4"
+
+#[menu]
+#  [[menu.footer]]
+#    name = "GitHub"
+#    url = "https://github.com/nicokaiser/hugo-theme-gallery/"
+#    weight = 3
+
+[services]
+  [services.rss]
+    limit = 100
