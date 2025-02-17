@@ -1,5 +1,5 @@
 ---
-title: ©Prov1dence
+title: "Prov1dence"
 # description: 
 # lastmod: 2023-07-05
 resources:

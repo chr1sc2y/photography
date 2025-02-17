@@ -1,4 +1,4 @@
-copyright = "©Prov1dence"
+copyright = ""
 defaultContentLanguage = "en"
 disableKinds = ["taxonomy"]
 enableRobotsTXT = true
@@ -9,8 +9,8 @@ title = "岐阜"
 
 [params]
   defaultTheme = "dark"
-  description = "Photo Gallery ©Prov1dence"
-  title = "Photo Gallery ©Prov1dence"
+  description = "Photo Gallery @Prov1dence"
+  title = "Photo Gallery @Prov1dence"
   [params.author]
     email = "zintrulcre@gmail.com"
     name = "Prov1dence"
