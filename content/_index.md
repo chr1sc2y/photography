@@ -1,6 +1,6 @@
 ---
-title: Photo Gallery
-description: ©Prov1dence
+title: 岐阜
+# description: 
 # lastmod: 2023-07-05
 resources:
   - src: martin-martz-wRuhOOaG-Z4-unsplash.jpg
