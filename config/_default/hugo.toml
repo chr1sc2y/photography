@@ -5,7 +5,7 @@ enableRobotsTXT = true
 languageCode = "en"
 timeZone = "Australia/Melbourne"
 timeout = "120s"
-title = "©Prov1dence"
+title = "岐阜"
 
 [params]
   defaultTheme = "dark"
