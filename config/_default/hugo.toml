@@ -17,7 +17,7 @@ title = "岐阜"
   [params.socialIcons]
     #facebook = "https://www.facebook.com/"
     #instagram = "https://www.instagram.com/"
-    #github = "https://github.com/nicokaiser/hugo-theme-gallery/"
+    github = "https://github.com/chr1sc2y"
     #youtube = "https://www.youtube.com/"
     #email = "mailto:zintrulcre@gmail.com"
     #website = "https://prov1dence.top/"
