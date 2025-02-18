@@ -3,4 +3,4 @@
 	url = https://github.com/nicokaiser/hugo-theme-gallery.git
 [submodule "public"]
 	path = public
-	url = git@github.com:chr1sc2y/photography.github.io.git
+	url = git@github.com:chr1sc2y-photography/chr1sc2y-photography.github.io.git
