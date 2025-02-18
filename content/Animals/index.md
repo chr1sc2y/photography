@@ -3,7 +3,7 @@ menus: "main"
 title: Animals
 # description: "test"
 # categories: ["Melbourne"]
-weight: 9
+weight: 5
 params:
   # featured: true
   featured_image: DSC02515.jpeg
@@ -15,7 +15,11 @@ resources:
     #   cover: true
   - src: DSC02760.jpeg
   - src: DSC02515.jpeg
-  - src: DSC00014.jpeg
+  - src: DSCF7649.jpeg
   - src: DSF4613.jpeg
----
 
+
+
+
+
+---
