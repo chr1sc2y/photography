@@ -20,7 +20,7 @@ title = "岐阜"
     #github = "https://github.com/nicokaiser/hugo-theme-gallery/"
     #youtube = "https://www.youtube.com/"
     #email = "mailto:zintrulcre@gmail.com"
-    website = "https://prov1dence.top/"
+    #website = "https://prov1dence.top/"
     #mastodon = "https://example.com"
     #pixelfed = "https://example.com"
     #mixcloud = "https://mixcloud.com"
@@ -48,7 +48,8 @@ title = "岐阜"
   [[module.imports]]
     path = "github.com/nicokaiser/hugo-theme-gallery/v4"
 
-#[menu]
+[menu]
+  main = []
 #  [[menu.footer]]
 #    name = "GitHub"
 #    url = "https://github.com/nicokaiser/hugo-theme-gallery/"

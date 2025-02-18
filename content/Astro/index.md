@@ -1,5 +1,5 @@
 ---
-menus: "main"
+# menus: "main"
 title: Astro
 # description: "test"
 # categories: ["Melbourne"]

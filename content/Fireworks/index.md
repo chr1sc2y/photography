@@ -1,5 +1,5 @@
 ---
-menus: "main"
+# menus: "main"
 title: Fireworks
 # description: "test"
 # categories: ["Melbourne"]
