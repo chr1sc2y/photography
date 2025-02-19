@@ -14,10 +14,10 @@ resources:
   - src: DSC01993.jpeg
     params:
       cover: true
-  - src: DSC01535.jpeg
+  - src: DSC01552.jpeg
   - src: DSC01649.jpeg
   - src: DSC09551.jpeg
-  - src: DSC00084.jpeg
+  - src: DSC00076.jpeg
 
 
 

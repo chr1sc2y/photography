@@ -15,8 +15,8 @@ resources:
     #   cover: true
   - src: DSC02760.jpeg
   - src: DSC02515.jpeg
-  - src: DSCF7649.jpeg
-  - src: DSF4613.jpeg
+  - src: 1.jpeg
+  - src: 2.jpeg
 
 
 
