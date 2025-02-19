@@ -13,6 +13,7 @@ params:
 resources:
   - src: DSCF3113.jpeg
   - src: DSCF2799.jpeg
+  - src: DSC00899.jpeg
   - src: DJI_20241208170043_0019_D.jpeg
   
 
