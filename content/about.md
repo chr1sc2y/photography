@@ -7,4 +7,15 @@ menu:
     weight: 90
 ---
 
-This is a demonstration site for the Hugo Gallery theme.
+### Hi there 👋
+
+🇦🇺🇨🇳
+
+This is Photographyer ©Prov1dence.
+
+### Contact me 📧
+
+- 📫 Email at chr1sc2y.photography@gmail.com
+- 🌐 Check out my [Github](https://github.com/chr1sc2y)
+
+### Cheers 🍻
