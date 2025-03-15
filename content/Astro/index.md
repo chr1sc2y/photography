@@ -12,6 +12,7 @@ params:
   sort_by: Date # Name 
 resources:
   - src: 1.jpeg
+  - src: DSC02762.jpeg
   
 
   

@@ -6,7 +6,7 @@ title: Nature
 weight: 6
 params:
   # featured: true
-  featured_image: DSCF3113.jpeg
+  featured_image: DSC00899.jpeg
   theme: dark
   sort_order: desc
   sort_by: Date # Name 

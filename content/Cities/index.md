@@ -15,7 +15,6 @@ resources:
   - src: DSC06485.jpeg
   - src: DSC07595.jpeg
   - src: DSC09862.jpeg
-  - src: DSCF7532.jpeg
   - src: DSC06471.jpeg
   - src: DSCF0563.jpeg
   - src: 1.jpeg
