@@ -11,8 +11,7 @@ params:
   sort_order: desc
   sort_by: Date # Name 
 resources:
-  - src: WechatIMG58.jpg
-  # - src: DSC02888.jpeg
+  - src: DSC02888.jpeg
   - src: DSC01993.jpeg
     params:
       cover: true
