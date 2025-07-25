@@ -14,6 +14,7 @@ resources:
     # params:
     #   cover: true
   - src: EUR03920-Signed.jpg
+  - src: EUR00785-Signed.jpg
   - src: EUR09620-Signed.jpg
   - src: DSC02760.jpeg
   - src: DSC02515.jpeg

@@ -6,11 +6,12 @@ title: Nature
 weight: 6
 params:
   # featured: true
-  featured_image: DSC00899.jpeg
+  featured_image: EUR08912-Signed.jpg
   theme: dark
   sort_order: desc
   sort_by: Date # Name 
 resources:
+  - src: EUR08912-Signed.jpg
   - src: DSCF3113.jpeg
   - src: DSCF2799.jpeg
   - src: DSC00899.jpeg
