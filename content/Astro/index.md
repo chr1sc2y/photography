@@ -3,7 +3,7 @@
 title: Astro
 # description: "test"
 # categories: ["Melbourne"]
-weight: 10
+weight: 3
 params:
   # featured: true
   featured_image: DSC05420.jpg

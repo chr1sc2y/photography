@@ -6,7 +6,7 @@ title: Animals
 weight: 5
 params:
   # featured: true
-  featured_image: EUR03920-Signed.jpg
+  featured_image: EUR00785-Signed.jpg
   theme: dark
   sort_order: desc
   sort_by: Date # Name 
