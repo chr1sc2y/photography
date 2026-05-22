@@ -13,9 +13,9 @@ params:
 resources:
   - src: DSC05420.jpg
   - src: DSC05429.jpg
+  - src: DSC02762.jpeg
   - src: DSC03838-Signed.jpg
   - src: 1.jpeg
-  - src: DSC02762.jpeg
   
 
   

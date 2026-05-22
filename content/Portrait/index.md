@@ -12,11 +12,11 @@ params:
   sort_by: Date # Name 
 resources:
   - src: DSC00090.jpeg
-  - src: DSC02888.jpg
-  - src: DSC01993.jpeg
+  - src: DSC09539.jpeg
   - src: DSC01552.jpeg
   - src: DSC01649.jpeg
-  - src: DSC09539.jpeg
+  - src: DSC02888.jpg
+  - src: DSC01993.jpeg
 
 
 

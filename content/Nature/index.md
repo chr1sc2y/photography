@@ -12,10 +12,10 @@ params:
   sort_by: Date # Name 
 resources:
   - src: EUR08912-Signed.jpg
-  - src: DSCF3113.jpeg
-  - src: DSCF2799.jpeg
   - src: DSC00899.jpeg
   - src: DJI_20241208170043_0019_D.jpeg
+  - src: DSCF2799.jpeg
+  - src: DSCF3113.jpeg
   
 
   
