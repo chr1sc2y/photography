@@ -1,3 +1,6 @@
+{{ $hasBack := .Parent }}
+{{ $hasMenu := site.Menus.main }}
+{{ if or $hasBack $hasMenu }}
 <header>
   {{ with .Parent }}
     <a class="btn btn-square" href="{{ .RelPermalink | default .Site.Home.RelPermalink }}" title="{{ .Title }}">
@@ -6,7 +9,7 @@
       </svg>
     </a>
   {{ end }}
-  {{ if site.Menus.main }}
+  {{ if $hasMenu }}
     <ul>
       <li>
         <button class="btn btn-square group" id="menu-toggle" aria-expanded="false" type="button" title="{{ T "menu" }}">
@@ -21,4 +24,5 @@
     </ul>
   {{ end }}
 </header>
+{{ end }}
 {{ partial "menu.html" . }}
