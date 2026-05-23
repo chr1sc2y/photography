@@ -6,7 +6,7 @@
       </svg>
     </a>
   {{ end }}
-  {{ if .IsHome }}{{ partialCached "social-icons.html" . }}{{ end }}
+  {{ partialCached "social-icons.html" . }}
   {{ if site.Menus.main }}
     <ul>
       <li>
