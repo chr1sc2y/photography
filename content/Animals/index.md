@@ -11,6 +11,10 @@ params:
   sort_order: desc
   sort_by: Date # Name 
 resources:
+  - src: EUR06475.jpg
+  - src: EUR08872.jpg
+  - src: EUR06098.jpg
+  - src: EUR09631.jpg
   - src: EUR00785-Signed.jpg
   - src: EUR09620-Signed.jpg
   - src: EUR03920-Signed.jpg

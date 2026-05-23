@@ -11,6 +11,7 @@ params:
   sort_order: desc
   sort_by: Date # Name 
 resources:
+  - src: DSC05681.jpg
   - src: EUR08912-Signed.jpg
   - src: DSC00899.jpeg
   - src: DJI_20241208170043_0019_D.jpeg
