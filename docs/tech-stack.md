@@ -48,8 +48,7 @@ content/
 ├── Cities/            # Album: urban photography
 ├── Fireworks/         # Album: fireworks
 ├── Nature/            # Album: nature photography
-├── Portrait/          # Album: portrait photography
-└── featured-album/    # Featured picks (cross-album)
+└── Portrait/          # Album: portrait photography
 ```
 
 Each album is a Hugo page bundle. The `index.md` contains album metadata and an explicit `resources` list that controls which images appear and in what order.
@@ -59,12 +58,12 @@ Each album is a Hugo page bundle. The `index.md` contains album metadata and an 
 Source images are stored directly in `content/` at web-optimised resolution. Hugo generates thumbnails and responsive variants at build time into `resources/_gen/` (gitignored).
 
 **Source image spec:** max 2048px wide, JPEG quality ~85% (`-q:v 3` via FFmpeg)  
-**Compression tool:** `media-workflow/scripts/compress_web_images.py`  
+**Compression tool:** `scripts/compress_web_images.py`  
 **Build-time processing:** Hugo CatmullRom resampling, quality 75 (for generated thumbnails)
 
 ### Config
 
-Hugo config lives in `config/_default/params.toml`. Key settings:
+Hugo config lives in `config/_default/hugo.toml`. Key settings:
 
 - `defaultTheme: dark`
 - `imaging.quality: 75` (Hugo-generated thumbnails)

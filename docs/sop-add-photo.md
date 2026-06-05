@@ -7,12 +7,15 @@ This is the standard procedure for adding one or more photos to the gallery. All
 ## Prerequisites
 
 - Photo file(s) accessible on local disk (original export from Lightroom or camera)
-- `media-workflow` repo available at `~/repo/media-workflow/`
 - FFmpeg installed (`brew install ffmpeg`)
 
 ---
 
 ## Step 1: Determine target album
+
+If the owner asks for screening, recommendation, or review, do not add files yet.
+Present recommended filenames and thumbnails only. Continue with this SOP only
+after the owner explicitly approves the exact filenames to add.
 
 Choose which album the photo belongs to:
 
@@ -31,10 +34,10 @@ To create a new album, see [Creating a New Album](#creating-a-new-album) below.
 
 ## Step 2: Compress the photo
 
-Run the compression script from the `media-workflow` repo. The script resizes images wider than 2048px and sets JPEG quality to ~85%.
+Run this repository's compression script. The script resizes images wider than 2048px and sets JPEG quality to about 85%.
 
 ```bash
-python3 ~/repo/media-workflow/scripts/compress_web_images.py /path/to/source/directory/
+python3 scripts/compress_web_images.py /path/to/source/directory/ --max-width 2048 --quality 3
 ```
 
 Or for a single file, copy it to a temp directory first:
@@ -42,13 +45,13 @@ Or for a single file, copy it to a temp directory first:
 ```bash
 mkdir /tmp/photo-compress
 cp /path/to/DSC05420.jpg /tmp/photo-compress/
-python3 ~/repo/media-workflow/scripts/compress_web_images.py /tmp/photo-compress/
+python3 scripts/compress_web_images.py /tmp/photo-compress/ --max-width 2048 --quality 3
 ```
 
 **Expected output:**
 ```
-✅ DSC05420.jpg: 7952px → 2048px, 24.0MB → 1.2MB
-Done: 1 compressed, 0 skipped, 0 failed
+compressed /tmp/photo-compress/DSC05420.jpg 7952x5304 -> 2048x1366, 24000000 -> 1200000
+images=1 compressed=1 skipped=0
 ```
 
 Files wider than 2048px are resized; files already within limit are skipped.
@@ -145,10 +148,12 @@ Note: the file blob will remain as a placeholder in git history (this is expecte
 ## Checklist
 
 ```
-[ ] Photo compressed to ≤ 2048px wide (compress_web_images.py)
+[ ] Photo compressed to <= 2048px wide (compress_web_images.py)
 [ ] File copied to correct content/<Album>/ directory
 [ ] resources list in index.md updated
 [ ] featured_image updated if this is the new cover
+[ ] `python3 -m unittest discover tests` passes
+[ ] `hugo --minify` passes
 [ ] git commit with descriptive message
 [ ] git push to main
 [ ] Verified live on photography.prov1dence.top

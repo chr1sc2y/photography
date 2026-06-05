@@ -17,14 +17,14 @@ All source images must be compressed before being committed to the repository. T
 
 ## Tool
 
-Script: `~/repo/media-workflow/scripts/compress_web_images.py`  
+Script: `scripts/compress_web_images.py`  
 Dependency: FFmpeg (`brew install ffmpeg`)
 
 ### What it does
 
 1. Scans a directory recursively for `.jpg` / `.jpeg` files (case-insensitive)
 2. Reads each image's pixel width via `ffprobe`
-3. Skips files already ≤ `--max-width` (default 2048px)
+3. Skips files already <= `--max-width` (default 2048px)
 4. For files wider than the limit: resizes using FFmpeg `scale` filter, sets JPEG quality via `-q:v` (default 3 ≈ 85%)
 5. Replaces the original file in-place
 6. Reports original → compressed size for each file
@@ -43,21 +43,21 @@ Dependency: FFmpeg (`brew install ffmpeg`)
 ### Compress a single directory
 
 ```bash
-python3 ~/repo/media-workflow/scripts/compress_web_images.py /path/to/dir/
+python3 scripts/compress_web_images.py /path/to/dir/ --max-width 2048 --quality 3
 ```
 
 ### Compress a single file via temp directory
 
 ```bash
 mkdir /tmp/compress && cp /path/to/photo.jpg /tmp/compress/
-python3 ~/repo/media-workflow/scripts/compress_web_images.py /tmp/compress/
+python3 scripts/compress_web_images.py /tmp/compress/ --max-width 2048 --quality 3
 cp /tmp/compress/photo.jpg content/<Album>/
 ```
 
 ### Compress all existing content images
 
 ```bash
-python3 ~/repo/media-workflow/scripts/compress_web_images.py content/
+python3 scripts/compress_web_images.py content/ --max-width 2048 --quality 3
 ```
 
 Already-compressed files (≤ 2048px) will be skipped automatically.
@@ -67,9 +67,8 @@ Already-compressed files (≤ 2048px) will be skipped automatically.
 ## Output interpretation
 
 ```
-✅ EUR03920-Signed.jpg: 8698px → 2048px, 13.4MB → 0.4MB   # compressed
-⏭  DSC02762.jpeg: skip (width=2048px)                      # already within limit
-❌ corrupt.jpg: Failed                                       # ffprobe/ffmpeg error
+compressed content/Animals/EUR03920-Signed.jpg 8698x5799 -> 2048x1366, 13400000 -> 400000
+skip content/Astro/DSC02762.jpeg width=2048
 ```
 
 ---
